@@ -1,8 +1,9 @@
 .post {
     width: 100%;
     max-width: 500px;
-    background-color: rgb(36,37,38);
+    background-color: rgb(36, 37, 38);
     margin-bottom: 45px;
+   
 }
 
 .post__image {
@@ -10,24 +11,26 @@
     object-fit: contain;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    user-drag: none; 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .post__image:hover {
     cursor: pointer;
 }
+
 .post__text {
     font-weight: normal;
-    padding-left: 12px;
+    padding-left: 40px; 
     padding-bottom: 10px;
+    padding: 20px;
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .comments__show .container__comments {
@@ -51,7 +54,6 @@ user-select: none;
     flex-direction: row;
     margin-top: -10px;
 }
-
 
 .comments__show.myself {
     display: flex;
@@ -91,14 +93,14 @@ user-select: none;
     padding-left: 10px;
 }
 
-.post__header > h3 {
+.post__header>h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 750;
     font-size: 14px;
     color: #fff;
 }
 
-.post > h4 {
+.post>h4 {
     color: #fff;
     margin-top: 3px;
     margin-left: 5px;
@@ -108,7 +110,6 @@ user-select: none;
     margin-right: 10px;
 }
 
-
 .post__input {
     flex: 1;
     border: none;
@@ -116,10 +117,9 @@ user-select: none;
     border-top: 1px solid lightgray;
 }
 
-
 .post__like {
     margin-left: 10px;
-    margin-bottom : 10px;
+    margin-bottom: 10px;
     margin-top: 5px;
     margin-right: -2px;
     z-index: 1000;
@@ -135,7 +135,7 @@ user-select: none;
 
 .post__likeandlove p {
     margin-left: 3px;
-    margin-top:3px;
+    margin-top: 3px;
     color: #fff;
 }
 
@@ -161,6 +161,7 @@ user-select: none;
     margin-left: -2px;
     margin-top: 5px;
 }
+
 .post__verified {
     background-image: url(https://facebook.com/rsrc.php/v3/ym/r/CW23Wci7xD7.png);
     background-repeat: no-repeat;
@@ -172,7 +173,7 @@ user-select: none;
     width: 12px;
 }
 
-.post > hr {
+.post>hr {
     margin-bottom: 10px;
     color: gray;
     opacity: 0.4;
@@ -190,7 +191,6 @@ user-select: none;
     margin-right: 5px;
     -webkit-filter: brightness(0) invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%);
 }
-
 
 .like2.blue {
     background-image: url(https://facebook.com/rsrc.php/v3/yL/r/bDzlg9kYh_x.png);
@@ -221,7 +221,7 @@ user-select: none;
 }
 
 .textforlike.bluetextforlike {
-    color: #4080FF;
+    color: #CA7917;
 }
 
 .post__likeoptions {
@@ -247,7 +247,7 @@ user-select: none;
     border-radius: 5px;
 }
 
-.like > h3 {
+.like>h3 {
     font-size: 13px;
     color: #A4A7AB;
     font-weight: 600;
@@ -255,7 +255,7 @@ user-select: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.like > h3:hover {
+.like>h3:hover {
     cursor: pointer
 }
 
@@ -300,7 +300,7 @@ user-select: none;
     border-radius: 5px;
 }
 
-.comment > h3 {
+.comment>h3 {
     font-size: 13px;
     color: #A4A7AB;
     font-weight: 600;
@@ -308,7 +308,7 @@ user-select: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.comment > h3:hover {
+.comment>h3:hover {
     cursor: pointer
 }
 
@@ -321,7 +321,7 @@ user-select: none;
     padding-top: 6px;
 }
 
-.share > h3 {
+.share>h3 {
     font-size: 13px;
     color: #A4A7AB;
     font-weight: 600;
@@ -329,7 +329,7 @@ user-select: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.share > h3:hover {
+.share>h3:hover {
     cursor: pointer
 }
 
@@ -364,7 +364,7 @@ user-select: none;
 .post__avatar2 {
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .commentInputBox {
@@ -392,8 +392,8 @@ user-select: none;
     color: rgb(153, 153, 153);
     font-size: 9px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left:70px;
+    margin-left: 70px;
     margin-top: -14px;
     margin-bottom: 8px;
-    display:none
+    display: none
 }

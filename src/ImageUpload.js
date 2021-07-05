@@ -117,8 +117,8 @@ function ImageUpload() {
             <Dialog
                 open={open}
                 onClose={handleClose}
-                scroll={scroll}
-            >
+                scroll={scroll} >
+            
                 <div class="makeStyles-paper-1">
                     <div class="modalInit">
                         <h1>Create Post</h1>
@@ -131,7 +131,7 @@ function ImageUpload() {
                     </div>
                     <div class="inputForUpload">
                         <input onChange={handleChange} type="file" accept="image/*" className='four' />
-                        <textarea value={caption} onChange={(e) => setCaption(e.target.value)} rows="4" placeholder={`What's on your mind, ${user?.displayName}?`} />
+                        <textarea value={caption} onChange={(e) => setCaption(e.target.value)} rows="4" placeholder={`Say something, ${user?.displayName}?`} />
                     </div>
                     <div class={`previewImage ${!image && "vanish"}`}>
                         <img src={imageURL} className="previewImaage"  alt="preview pic" />
@@ -160,7 +160,7 @@ function ImageUpload() {
             <div class="imageupload__container">
                 <div class="postArea">
                     <img src={user?.photoURL} class="Avatar"  alt="user pic"/>
-                    <input value={caption} onChange={(e) => setCaption(e.target.value)} onClick={handleClickOpen('body')} placeholder={`What's on your mind, ${user?.displayName}?`} />
+                    <input value={caption} onChange={(e) => setCaption(e.target.value)} onClick={handleClickOpen('body')} placeholder={`Say something, ${user?.displayName}?`} />
                 </div>
                 <div class="hr" />
                 <div class="options">
@@ -179,8 +179,8 @@ function ImageUpload() {
                 </div>
             </div>
         </div>
-        //Are you ready to build the most updated Facebook Version using React JS and Firebase ? You are in the right course. The only pre-requisite is the previous course which is Facebook Clone V1. So, whenever you are ready, click that enroll button to enroll for this course !
+
     )
 }
 
-export default ImageUpload
+export default ImageUpload;

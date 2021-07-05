@@ -37,7 +37,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
         }
     }, [postId]);
 
-    useEffect(() => {
+    useEffect((show) => {
         db.collection("posts")
             .doc(postId)
             .collection("likes")
@@ -47,7 +47,8 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
                 if (doc2.data()) {
                     if (show === 'like2') {
                         setShow('like2 blue');
-                        setShow2('textforlike bluetextforlike')
+                        setShow2('textforlike bluetextforlike');
+                       
                         
                        
                     } else {
@@ -123,7 +124,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
         if(postUserId) {
             db.collection('users').doc(postUserId).onSnapshot((snapshot) => {
                 setPosterImage(snapshot.data().photoURL)
-                console.log(snapshot.data())
+              
             })
         }
     }, )
@@ -143,7 +144,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
                 <i class="post__verified" />
             </div>
 
-            <h4 className="post__text">{caption}</h4>
+            <h4 className="post__text">~ {caption}</h4>
 
             <img src={imageUrl} className="post__image" alt=""  />
 

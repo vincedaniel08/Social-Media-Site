@@ -1,11 +1,18 @@
 .register {
-  background-color: #E9EBEE;
-    height: 100%;
+  background-color: #1d2129;
+    height: 830px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  
 }
 
+.loginCard {
+  Width: '300px';
+ 
+
+}
 .register__logo {
   margin-top: 10px;
   height: 100px;
@@ -20,6 +27,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
   height: fit-content;
   width: 436px;
+ 
   background-color: #fff;
   text-align: center;
   margin-bottom: 50px;
@@ -113,7 +121,7 @@
   -webkit-font-smoothing: antialiased;
   font-weight: bold;
   justify-content: center;
-  background-color: #00A400;
+  background-color: #1c1e21;
   border: none;
   border-radius: 6px;
   font-size: 20px;
@@ -196,7 +204,7 @@
 }
 
 .register__login {
-  color: #1877f2;
+  color: #1c1e21;
     font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
     font-size: 17px;
     line-height: 20px;

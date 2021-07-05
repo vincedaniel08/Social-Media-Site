@@ -9,9 +9,9 @@ function Posts({ user }) {
     const history = useHistory("");
     const [posts, setPosts] = useState([]);
 
-    document.title = 'Facebook';
+    document.title = 'Impulse';
 
-    if (user === undefined) {
+    if (user == null) {
         history.push("/login")
     }
 

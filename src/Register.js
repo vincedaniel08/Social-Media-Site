@@ -62,10 +62,10 @@ function Register() {
 
     return (
         <div className="register">
-            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" class="register__logo" alt="logo pic"/>
+            <img src="https://dcassetcdn.com/design_img/1991661/580863/580863_10613380_1991661_5aab9ee1_image.jpg" class="register__logo" alt="logo pic"/>
             <div className="register__container">
                 <h1>Sign Up</h1>
-                <p>It's quick and easy.</p>
+                <p></p>
                 <div className="hr3" />
                 <form>
                     <div className="row">
@@ -293,11 +293,8 @@ function Register() {
                         </div>
 
                     </div>
-                    <p className="register__policy">
-                        By clicking Sign Up, you agree to our{" "}
-                        <span>Terms, Data Policy</span> and <span>Cookie Policy</span>. You
-            may receive SMS notifications from us and can opt out at any time.
-          </p>
+                  <br></br>
+                 
 
                     <center>
                         <button
