@@ -68,7 +68,7 @@ function Register() {
                 <p></p>
                 <div className="hr3" />
                 <form>
-                    <div className="row">
+                <center>
                         <input
                             onChange={(e) => {
                                 setFirstName(e.target.value);
@@ -77,6 +77,8 @@ function Register() {
                             type="name"
                             placeholder="First Name"
                         />
+                    </center>
+                    <center>
                         <input
                             onChange={(e) => {
                                 setLastName(e.target.value)
@@ -85,7 +87,7 @@ function Register() {
                             type="name"
                             placeholder="Last Name"
                         />
-                    </div>
+                    </center>
                     <center>
                         <input
                             onChange={(e) => {
@@ -103,7 +105,7 @@ function Register() {
                         />
                     </center>
                     <h5 className="register__date">Date Of Birth</h5>
-                    <div className="row">
+                    
                         <select className="register__date2" onChange={(e) => setBirthday([...birthday, e.target.value])}>
                             <option value="Day">Day</option>
                             <option value="1">1</option>
@@ -138,7 +140,8 @@ function Register() {
                             <option value="30">30</option>
                             <option value="31">31</option>
                         </select>
-
+                     
+                        
                         <select className="register__date3" onChange={(e) => setBirthday([...birthday, e.target.value])}>
                             <option value="Day">Month</option>
                             <option value="1">Jan</option>
@@ -154,7 +157,8 @@ function Register() {
                             <option value="11">Nov</option>
                             <option value="12">Dec</option>
                         </select>
-
+                      
+                      
                         <select className="register__date3" onChange={(e) => setBirthday([...birthday, e.target.value])}>
                             <option value="2018">2020</option>
                             <option value="2018">2019</option>
@@ -273,20 +277,23 @@ function Register() {
                             <option value="1906">1906</option>
                             <option value="1905">1905</option>
                         </select>
-                    </div>
-
+                       
                     <h5 className="register__gender">Gender</h5>
 
+                    
                     <div className="register__radiocontainer">
+                 
                         <div className="wrapper">
                             <label>Female</label>
                             <input onChange={(e) => setGender(e.target.value)} type="radio" name="gender" value="Female" />
                         </div>
-
+                     
+                 
                         <div className="wrapper">
                             <label>Male</label>
                             <input onChange={(e) => setGender(e.target.value)} type="radio" name="gender" value="Male" />
                         </div>
+                     
                         <div className="wrapper">
                             <label>Other</label>
                             <input onChange={(e) => setGender(e.target.value)} type="radio" name="gender" value="Other" />

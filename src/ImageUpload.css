@@ -1,3 +1,23 @@
+
+@media screen and (max-width: 600px) {
+   
+    .imageupload__container {
+        display: flex;
+        flex-direction: column;
+        background-color: #242526;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 305px;
+        margin-right: 10px;
+        max-width: 395px;
+    }
+   
+
+  
+}
+
+
 .imageupload__container {
     display: flex;
     flex-direction: column;
@@ -5,7 +25,7 @@
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 500px;
+    width: auto;
 }
 
 .imageupload.none {
@@ -31,19 +51,20 @@
 
 .postArea input {
     background-color: #3A3B3C;
-    width: 85%;
+    width: 80%;
     outline: none;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 10px;
-    font-size: 17px;
+    font-size: 12px;
     color: #fff;
     border-radius: 30px;
 }
 
 .postArea input::-webkit-input-placeholder {
-    font-size: 17px;
+    font-size: 15px;
+    text-align: left;
     color: #AAADB2;
 }
 
@@ -105,7 +126,7 @@
 }
 
 .liveVideo > h2, .photo > h2, .feeling > h2 {
-    font-size: 15px;
+    font-size: 12px;
     color:#b0b3b8;
     padding: 10px;
     font-weight: 600;
@@ -176,7 +197,7 @@
     outline: none;
     width: 100%;
     border: none;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e4e6eb;

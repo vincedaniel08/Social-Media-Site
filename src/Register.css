@@ -9,7 +9,7 @@
 }
 
 .loginCard {
-  Width: '300px';
+  Width: 'auto';
  
 
 }
@@ -25,9 +25,8 @@
   border: 1px solid #dddfe2;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-  height: fit-content;
-  width: 436px;
- 
+  height: auto;
+  width: auto;  
   background-color: #fff;
   text-align: center;
   margin-bottom: 50px;
@@ -48,7 +47,7 @@
 
 .register__container > h1 {
   margin-top: 15px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
@@ -73,7 +72,7 @@
   font-size:17px;
   vertical-align: middle;
   margin-right: 10px;
-  width: 180px;
+  width: auto;
 }
 
 .register__container > p {
@@ -95,15 +94,15 @@
   border: 1px solid #dddfe2;
   color: #1d2129;
   line-height: 16px;
-  font-size:17px;
+  font-size: 10px;
   vertical-align: middle;
   margin-right: 10px;
-  width: 90%;
+  width: 80%;
   margin-left: 10px;
 }
 
 .register__container > form > center > input::-webkit-input-placeholder {
-  font-size: 17px;
+  font-size: 15px;
   color: rgba(128,128,128,0.8);
   padding-left: 0px;
 }
@@ -124,55 +123,59 @@
   background-color: #1c1e21;
   border: none;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 13px;
   line-height: 48px;
   padding: 0 16px;
-  width: 55%;
+  width: 30%;
   height: 45px;
   margin-bottom: 20px;
   color: #fff;
 }
 
+
 .register__date2 {
-  margin-left: -70px;
+ 
   margin-right: 10px !important;
   height: 40px;
-  width: 130px;
+  width: 50px;
   outline: #CCD0D5;
   border-radius: 5px;
-  margin-top: 20px;
-  float: left;
+  margin-top: 10px;
+  float: center;
 }
 
 .register__date3 {
   margin-left: 10px !important;
   margin-right: 10px !important;
   height: 40px;
-  width: 130px;
+  width: 70px;
   outline: #CCD0D5;
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
-  float: left;
+  float: center;
 }
 
 .register__date, .register__gender {
   font-size: 12px;
   color: #606770;
   font-weight: 400;
-  float: left;
+  float: center;
   margin-left: 10px;
 }
 
 .register__radiocontainer {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
+
   flex-direction: row;
   margin-left: 10px;
+
 }
 
 .wrapper {
-  padding:10px;
+  padding: 5px;
+  font-size: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -183,11 +186,13 @@
 }
 
 .wrapper label {
-  margin-right: 55px;
+  margin-right: 27px;
+  
 }
 
 .wrapper input {
   margin-top: 5px;
+
 }
 
 .register__policy {
@@ -206,7 +211,7 @@
 .register__login {
   color: #1c1e21;
     font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 20px;
     margin-bottom: 20px;
 }

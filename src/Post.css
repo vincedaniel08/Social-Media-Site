@@ -1,6 +1,20 @@
+@media screen and (max-width: 600px) {
+
+    .post {
+      
+        margin-right: 10px;
+       width: 100%;
+       max-width: 395px;
+       margin-left: 305px;
+       background-color: rgb(36, 37, 38);
+       margin-bottom: 45px;
+    }
+}
+
+
 .post {
     width: 100%;
-    max-width: 500px;
+    max-width: auto;
     background-color: rgb(36, 37, 38);
     margin-bottom: 45px;
    

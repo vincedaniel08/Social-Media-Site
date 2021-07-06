@@ -14,7 +14,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
     const [posterImage, setPosterImage] = useState('')
   
     const [postUser, setPostUser] = useState();
-
+   
     useEffect(() => {
         if(postUserId) {
             db.collection('users').doc(postUserId).onSnapshot((snapshot) => {
@@ -38,7 +38,8 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
     }, [postId]);
 
     useEffect((show) => {
-        db.collection("posts")
+
+    db.collection("posts")
             .doc(postId)
             .collection("likes")
             .doc(user.uid)
@@ -48,7 +49,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
                     if (show === 'like2') {
                         setShow('like2 blue');
                         setShow2('textforlike bluetextforlike');
-                       
+                 
                         
                        
                     } else {
@@ -56,8 +57,8 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
                         setShow2('textforlike')
                         
                     }
-                 
-                }
+               
+                } 
             })
     },[postId, user.uid]);
 

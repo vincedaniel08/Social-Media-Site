@@ -8,11 +8,13 @@
     border-bottom: 2px solid #393A3B;
     position: sticky;
     top: 0;
+  
     z-index: 1000;
 }
 
 .homeHeaderLogoAndSearch {
     display: flex;
+    float: left;
     flex-direction: row;
 }
 
@@ -92,7 +94,7 @@
 .homeHeader__otherIcons {
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
+    margin-right: 10px;
     justify-content: center;
 }
 
@@ -172,10 +174,19 @@
 }
 
 @media screen and (max-width: 600px) {
+
+
+.homeHeader__logo{
+    width: 70px;
+   
+}
+
     .homeHeader__otherIcons,
     .market,
     .groups {
-        display: none;
+        display: flex;
+        width: 150px;
+        margin-right: 10px;
     }
     .homeHeader__otherIcons,
     .paragraph {
