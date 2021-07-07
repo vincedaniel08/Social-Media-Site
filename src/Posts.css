@@ -2,7 +2,7 @@
     flex: 1;
     min-width: fit-content;
     height: 100%;
-    margin-left: 50%;
+   
 }
 
 @media screen and (max-width: 1280px) {
@@ -10,6 +10,15 @@
         margin-left: 0%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .posts {
+        margin-left: 70%;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
 
 .posts {
     overflow-y: scroll;

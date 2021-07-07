@@ -229,14 +229,14 @@ function Profile({ user }) {
                             <li>Photos</li>
                             <li>Archive</li>
                             <li>More</li>
-                            <li className="rect editProfile"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/tmaz0VO75BB.png"alt="cover pic" /><p>Edit Profile</p></li>
-                            <li className="rect addFriend"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/33EToHSZ94f.png" alt="cover pic"/><p>Add Friend</p></li>
+                            <li className="rect editProfile"><img className="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/tmaz0VO75BB.png"alt="cover pic" /><p>Edit Profile</p></li>
+                            <li className="rect addFriend"><img className="img"src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/33EToHSZ94f.png" alt="cover pic"/><p>Add Friend</p></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="postsAndIntro">
-                <ProfileSidebar username={username} />
+                <ProfileSidebar username={username} className="sidebar" />
                 <div className="postAndWatch">
                     {
                         username === currentUser?.displayName ? (

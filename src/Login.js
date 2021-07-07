@@ -179,7 +179,7 @@ function Login() {
         
         <h3> <img src="https://dcassetcdn.com/design_img/1991661/580863/580863_10613380_1991661_5aab9ee1_image.jpg" class="login__logo" alt="logo pic" /></h3>
         
-        <form >
+        <form autoComplete="on" onSubmit={loginn}>
           <center>
             <input 
               type="email"
@@ -196,7 +196,7 @@ function Login() {
             />
           </center>
           <center>
-            <button onClick={loginn} type="submit" class="login__login">
+            <button type="submit" class="login__login">
               Log In
             </button>
           </center>

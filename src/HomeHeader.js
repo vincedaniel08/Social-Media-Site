@@ -40,7 +40,7 @@ function Header({ user, selected }) {
     });
   }, [user,dispatch])
 
-  if (user === false) {
+  if (user === null) {
     history.push("/login");
   }
 
