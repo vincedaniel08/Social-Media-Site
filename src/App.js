@@ -9,6 +9,7 @@ import Posts from './Posts';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { auth } from "./firebase";
 import Profile from './Profile';
+import ForgotPassword from './ForgotPassword';
 
 function App() {
 
@@ -33,6 +34,10 @@ function App() {
           <Switch>
             <Route path="/login">
               <Login />
+            </Route>
+
+            <Route path="/forgotpassword">
+              <ForgotPassword />
             </Route>
 
             <Route path="/register">

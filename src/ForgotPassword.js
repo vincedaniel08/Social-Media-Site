@@ -12,7 +12,7 @@ import {
 import {
  
   Link,
-  useHistory,
+ 
 } from "react-router-dom";
 
 
@@ -131,42 +131,29 @@ const useStyles = makeStyles((theme) => ({
  
 
 
-function Login() {
+function ForgotPassword() {
   const classes = useStyles();
-  const history = useHistory("");
+ 
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+
 
 
   const loginn = (e) => {
     e.preventDefault();
 
-    auth.signInWithEmailAndPassword(email, password)
-      .then((result) => {
-        history.push("/");
+     //backend
+   
 
-        
-      })
-      .catch((e) => {
-        if (
-          e.message ===
-          "The password is invalid or the user does not have a password."
-        ) {
-          alert("Please check your credentials again");
-        } else if (
-          e.message ===
-          "There is no user record corresponding to this identifier. The user may have been deleted."
-        ) {
-          history.push("/register");
-          window.scrollTo({
-            top: document.body.scrollHeight,
-            left: 0,
-            behavior: "smooth",
-          });
-        } else {
-          alert(e.message);
-        }
-      });
+     auth.sendPasswordResetEmail(email).then(function () {
+         // Email sent.
+         alert("Email sent");
+     }).catch(function (error) {
+         // An error happened.
+         alert("Your Email is not register");
+     });
+
+
+
   };
 
   return (
@@ -178,7 +165,6 @@ function Login() {
       <div className="login__container">
         
         <h3> <img src="https://dcassetcdn.com/design_img/1991661/580863/580863_10613380_1991661_5aab9ee1_image.jpg" class="login__logo" alt="logo pic" /></h3>
-        
         <form >
           <center>
             <input 
@@ -188,29 +174,21 @@ function Login() {
             />
 
           </center>
-          <center>
-            <input 
-              type="password"
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="Password"
-            />
-          </center>
+          
           <center>
             <button onClick={loginn} type="submit" class="login__login">
-              Log In
+              Send
             </button>
           </center>
           </form>
           <center>
             <div class="sideinfo">
-           
+             
+            <Link to="/login" style={{ textDecoration: 'none' }}>
+                <h5 class="rtd">Already have an account?</h5>
+              </Link>
               <Link to="/register" style={{ textDecoration: 'none' }}>
                 <h5 class="rtd">Sign up for Impulse</h5>
-              </Link>
-              <div></div>
-              <Link to="/forgotpassword" style={{ textDecoration: 'none' }}>
-              <h5 class="rtd">Forgotten Password?</h5>
-              <h5 class="dot">·</h5>
               </Link>
             </div>
           </center>
@@ -234,4 +212,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default ForgotPassword;

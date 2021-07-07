@@ -1,37 +1,35 @@
 @media screen and (max-width: 600px) {
     
-    .profile__topSection {
-        background-color: red;
-        height: fit-content
+   
+    
+  
+   
+   
+    .postsAndIntro {
+   
+        display:contents;
+    
+    
+      
+        flex-direction: column;
     }
-    .profile__coverPhoto {
-        background-color: red;
-        margin-left: 15%;
-        margin-right: 15%;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding-top: 190px;
-        z-index: 0;
+    
+    
+    
+    .profileHeader__left ul .selected {
+    color: #2E89FF;
+    border-radius: 0px !important;
+    border-bottom: 3px solid #2E89FF;
+    margin-left: 10%;
+    width: 100%;
+    margin-bottom: 0px !important;
     }
+    
+    
     
 }
 
-@media screen and (max-width: 1280px) {
-    .profile__topSection {
-        background-color: red;
-        height: fit-content
-    }
-    .profile__coverPhoto {
-        background-color: red;
-        margin-left: 15%;
-        margin-right: 15%;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding-top: 190px;
-        z-index: 0;
-    }
-
-}
+/*--------------------------------------------*/
 
 
 .profile__topSection {
@@ -153,6 +151,8 @@ cursor: pointer;
 .profileHeader__options {
     display: flex;
     flex-direction: row;
+    max-width: auto;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -165,6 +165,8 @@ cursor: pointer;
     margin: 0;
     font-size: 15px;
     color: #b0b3b8;
+    max-width: auto;
+    width: 100%;
     font-weight: 600;
     border-radius: 5px !important;
     margin-bottom: 10px;
@@ -181,6 +183,8 @@ color: #2E89FF;
 border-radius: 0px !important;
 border-bottom: 3px solid #2E89FF;
 margin-left: 45%;
+width: 100%;
+max-width: auto;
 margin-bottom: 0px !important;
 }
 
@@ -216,7 +220,8 @@ margin-bottom: 0px !important;
 
 
   .postsAndIntro {
-      display: flex;
+  
+      display:flex;
       flex-direction: row;
   }
 
@@ -224,6 +229,8 @@ margin-bottom: 0px !important;
       display: flex;
       flex-direction: column;
       flex: 0.6;
+      max-width: auto;
+      width: 100%;
       margin-left: 20px;
   }
 
