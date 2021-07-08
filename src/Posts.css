@@ -13,9 +13,9 @@
 
 @media screen and (max-width: 600px) {
     .posts {
-        margin-left: 70%;
+        margin-left: 60%;
         margin-top: 20px;
-        width: 100%;
+       
     }
 }
 

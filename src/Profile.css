@@ -7,9 +7,10 @@
         margin-right: 10px;
        width: 100%;
        max-width: 395px;
-       margin-left: 30px;
+       margin-left: 20px;
        background-color: rgb(36, 37, 38);
        margin-bottom: 45px;
+       width: 115%;
     }
     .imageupload__container {
         display: flex;
@@ -18,12 +19,27 @@
         border-radius: 10px;
         margin-top: 0px;
         margin-bottom: 20px;
-        margin-left: 30px;
+        margin-left: 15px;
         margin-right: 0px;
-        width: 100%;
+        width: 115%;
         max-width: 395px;
     }
-
+    .profileAvatar {
+        margin-left: 32%;
+        max-width: 50%;
+        height: 20% !important;
+        width: 20% !important;
+        border: 5px solid #242526;
+        bottom: -10px;
+        margin-bottom: -20px;
+        user-select: none !important;
+        -moz-user-select: none !important;
+        -webkit-user-drag: none !important;
+        -webkit-user-select: none !important;
+        -ms-user-select: none ;
+        border-radius: 100px;
+        cursor: pointer;
+    }
 
 }
 
@@ -59,22 +75,7 @@
     font-size: 85%;
     padding-bottom: 10px;
 }
-.profileAvatar {
-    margin-left: 32%;
-    max-width: 60px;
-    height: 20px !important;
-    width: 20px !important;
-    border: 5px solid #242526;
-    bottom: -10px;
-    margin-bottom: -20px;
-    user-select: none !important;
-    -moz-user-select: none !important;
-    -webkit-user-drag: none !important;
-    -webkit-user-select: none !important;
-    -ms-user-select: none ;
-    border-radius: 100px;
-    cursor: pointer;
-}
+
 .hr4 {
     height: 1px;
     width: 30%;
@@ -186,9 +187,9 @@
 
 .profileAvatar {
     margin-left: 42%;
-    height: auto !important;
-    width: auto !important;
-    max-width: auto;
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 15%;
     border: 5px solid #242526;
     bottom: -20px;
     margin-bottom: -20px;

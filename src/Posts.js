@@ -11,7 +11,7 @@ function Posts({ user }) {
 
     document.title = 'Impulse';
 
-    if (user == null) {
+    if (user === undefined) {
         history.push("/login")
     }
 

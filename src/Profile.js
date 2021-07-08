@@ -3,13 +3,14 @@ import './Profile.css';
 import { useParams } from 'react-router-dom';
 import Dialog from '@material-ui/core/Dialog';
 import { storage, db } from './firebase';
-import firebase from "./firebase";
+import firebase from "firebase";
 import ProfileSidebar from './ProfileSidebar';
 import ImageUpload from './ImageUpload';
 import Post from './Post';
 import $ from 'jquery';
-
+import { useHistory } from 'react-router-dom';
 function Profile({ user }) {
+    const history = useHistory('');
     const { username, uid } = useParams();
     const [open, setOpen] = useState(false);
     const [scroll] = React.useState('paper');
@@ -50,7 +51,7 @@ function Profile({ user }) {
         document.getElementsByClassName('inputImage')[0].click();
     }
 
-    document.title = `${username} | Facebook`
+    document.title = `${username} | Impulse`
 
     const myAccount = username === user.displayName;
 
@@ -75,8 +76,10 @@ function Profile({ user }) {
         }
     }, [imageURL])
 
-    const handleUpload = (event) => {
+    const [button, setbutton] = useState(false);
 
+    const handleUpload = (event) => {
+        setbutton('true');
         document.getElementsByClassName('progress')[0].style.display = 'block';
         event.preventDefault();
         const uploadTask = storage.ref(`profileImages/${user.uid}`).put(imageURL);
@@ -87,6 +90,8 @@ function Profile({ user }) {
                     (snapshot.bytesTransferred / snapshot.totalBytes) * 100
                 );
                 setProgress(progress);
+               
+
             },
             (error) => {
                 console.log(error);
@@ -97,18 +102,22 @@ function Profile({ user }) {
                     .ref("profileImages")
                     .child(user.uid)
                     .getDownloadURL()
-                    .then(url => {
+                    .then(url => { 
+                        alert('Uploading.........')
                         currentUser.updateProfile({
                             photoURL: url
                         }).then(function () {
+                            
                             db.collection('users').doc(uid).update({
                                 photoURL: url
+                                
                             }).then(function () {
-                                handleClose();
+                                alert('New Profile Picture Updated')
                                 setProgress(0);
-
+                                handleClose();
+                                history.push('/');
                                 window.location.href = `/${user.displayName}/${user.uid}`
-                            })
+                            }); alert('Uploading...')
                         })
                     })
             }
@@ -128,7 +137,7 @@ function Profile({ user }) {
     const bioSet = (e) => {
         setBio(e.target.value)
         if (101 - e.target.value.length < 0 || e.target.value.length === 0) {
-            $('.saveButton')[0].style.backgroundColor = '#3A3B3C';
+            $('.saveButton')[0].style.backgroundColor = '#CA7917';
             $('.saveButton')[0].style.opacity = 0.4;
         } else {
             $('.saveButton')[0].style.opacity = 1;
@@ -194,8 +203,8 @@ function Profile({ user }) {
                         <p>Are you sure you want to change your profile picture ? Changes cannot be reverted </p>
                         <progress value={progress} max="100" style={{ display: 'none' }} className="progress" />
                         <div className="buttons">
-                            <button onClick={handleUpload}>Yes</button>
-                            <button onClick={handleClose}>No</button>
+                            <button onClick={handleUpload} disabled={button} style={{ backgroundColor: button ? 'darkgray': '#CA7917 ' }} >Yes</button>
+                            <button onClick={handleClose}disabled={button}style={{ backgroundColor: button ? 'darkgray': '#CA7917 ' }}>No</button>
                         </div>
                     </div>
                 </div>

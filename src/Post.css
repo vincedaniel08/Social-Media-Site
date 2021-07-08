@@ -77,7 +77,7 @@
 .comments__show.myself {
     display: flex;
     flex-direction: row;
-    border-left: 2px solid #4080FF;
+    border-left: 2px solid #CA7917;
 }
 
 .container__comments p {
@@ -182,7 +182,7 @@
 }
 
 .post__verified {
-    background-image: url(https://facebook.com/rsrc.php/v3/ym/r/CW23Wci7xD7.png);
+    background-image: url(https://i.ibb.co/XLsnX3w/del.png);
     background-repeat: no-repeat;
     background-size: 98px 2698px;
     background-position: -64px -2570px;
@@ -212,14 +212,14 @@
 }
 
 .like2.blue {
-    background-image: url(https://facebook.com/rsrc.php/v3/yL/r/bDzlg9kYh_x.png);
-    background-size: 26px 766px;
+    background-image: url(./images/like2.png);
+    background-size: 20px 20px;
     background-repeat: no-repeat;
     display: inline-block;
-    margin-right: 5px;
+ 
     width: 18px;
     height: 18px;
-    background-position: 0 -200px;
+ 
     animation: scaleAndTilt .5s;
     -webkit-filter: brightness(100%) !important;
 }
