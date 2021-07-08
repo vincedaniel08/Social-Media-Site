@@ -11,31 +11,19 @@ function Sidebar({ user }) {
             <Link to={`/${user.displayName}/${user.uid}`}>
                 <SidebarRow avatar ImageLink={user?.photoURL} title={user?.displayName} />
             </Link>
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/7_gcmlwrelX.png" title="COVID-19 Information Centre" />
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/tSXYIzZlfrS.png" title="Find Friends" />
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png" title="Groups" />
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/MN44Sm-CTHN.png" title="Marketplace" />
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/FhOLTyUFKwf.png" title="Videos" />
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/N7UOh8REweU.png" title="Events" />
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/Uy-TOlM5VXG.png" title="Memories" />
-            <SidebarRow ImageLink="https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/KlDlsO3UxDM.png" title="Saved" />
-            <SidebarRow dropdown ImageLink="null" title="See more" />
+          
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/3362/3362054.png" title="Find Friends" />
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/1256/1256650.png" title="Groups" />
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/3718/3718330.png    " title="Marketplace" />
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/1179/1179069.png" title="Videos" />
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/1636/1636028.png" title="Events" />
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/4268/4268892.png" title="Memories" />
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/4018/4018877.png" title="Saved" />
+            <SidebarRow ImageLink="https://image.flaticon.com/icons/png/512/210/210129.png" title="See more" />
             <div class="hr" />
             <div class="policies">
-                <p>Privacy</p>
-                <p class="dot">·</p>
-                <p>Terms</p>
-                <p class="dot">·</p>
-                <p>Advertising</p>
-                <p class="dot">·</p>
-                <p>Ad choices</p>
-                <i class="ads" />
-                <p class="dot">·</p>
-                <p>Cookies</p>
-                <p class="dot">·</p>
-                <p>More</p>
-                <p class="dot">·</p>
-                <p>Facebook © 2020</p>
+            
+                <p>Impulse © 2021</p>
             </div>
         </div>
     )

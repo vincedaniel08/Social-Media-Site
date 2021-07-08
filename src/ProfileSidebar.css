@@ -1,3 +1,25 @@
+
+@media screen and (max-width: 600px) {
+
+    .posts2 {
+      
+      
+       
+     
+    }
+    .photos img {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        transition: 0.2s !important;
+        height: 50%;
+        width: auto;
+    }
+
+}
+
+
+
+
 .profileSidebar {
     display: flex;
     flex-direction: column;
@@ -9,7 +31,7 @@
 .photos {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-right: 10px;
+    
 }
 
 .posts2 {
@@ -39,8 +61,8 @@
     margin-left: 10px;
     margin-bottom: 10px;
     transition: 0.2s !important;
-    height: 70px;
-    width: auto;
+    max-height: 50px;
+    max-width: auto;
 }
 
 .photos img:hover {

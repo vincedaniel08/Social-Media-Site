@@ -8,7 +8,7 @@ function ProfileSidebar({ username }) {
 
     useEffect(() => {
         db.collection('posts').onSnapshot((snapshot) => {
-            snapshot.docs.map((doc)  => (e) => { 
+            snapshot.docs.forEach((doc) =>  { 
               if (doc.data().username === username)  {
                     if (nposts.length !== 9) {
                         if (!nposts.includes(doc.data().imageUrl)) {
@@ -23,7 +23,7 @@ function ProfileSidebar({ username }) {
 
     useEffect(() => {
         db.collection('users').onSnapshot((snapshot) => {
-            snapshot.docs.map((doc) => (e) => {
+            snapshot.docs.forEach((doc) =>  {
                 if (doc.data().displayName === username) {
                     setCUserdata(doc.data())
                    
@@ -40,7 +40,7 @@ function ProfileSidebar({ username }) {
                     {
                         cuserdata?.birthday ? (
                             <div className="introblock">
-                                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/IqqJ0EjDF9B.png" className="birthday" alt="pic" />
+                                <img src="https://image.flaticon.com/icons/png/512/2930/2930910.png" className="birthday" alt="pic" /> 
                                 <h1>{`${cuserdata?.birthday[0]} - ${cuserdata?.birthday[1]} - ${cuserdata?.birthday[2]}`}</h1>
                             </div>
                         ) : (

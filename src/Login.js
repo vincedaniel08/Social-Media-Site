@@ -200,7 +200,7 @@ function Login() {
               Log In
             </button>
           </center>
-          </form>
+          
           <center>
             <div class="sideinfo">
            
@@ -214,6 +214,7 @@ function Login() {
               </Link>
             </div>
           </center>
+          </form>
         
         
       

@@ -2,6 +2,7 @@
     flex: 1;
     min-width: fit-content;
     height: 100%;
+  
    
 }
 
@@ -13,7 +14,7 @@
 
 @media screen and (max-width: 600px) {
     .posts {
-        margin-left: 60%;
+        margin-left: 67%;
         margin-top: 20px;
        
     }
