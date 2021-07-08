@@ -105,27 +105,21 @@
   
 }
     
+
 .profileHeader__left ul li {
     margin: 0;
-    font-size: 65%;
+    font-size: 45%;
     color: #b0b3b8;
     font-weight: 300;
-    max-width: 100%;
-    border-radius: 5px !important;
-    margin-bottom: 10px;
-}
-.profileHeader__left ul li {
-    margin: 0;
-    font-size: 50%;
-    color: #b0b3b8;
-    font-weight: 300;
-    max-width: 100%;
+    max-width: 90%;
+    max-height: 50%;
     border-radius: 5px !important;
     margin-bottom: 10px;
 }
 .profileHeader__left ul li img {
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
+    font-size: 20%;
    
     
     
