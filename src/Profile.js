@@ -191,7 +191,9 @@ function Profile({ user }) {
     }, [bioPresent,bio])
 
     return (
+        
         <div className="profile">
+         
             <Dialog
                 open={open}
                 onClose={handleClose}
