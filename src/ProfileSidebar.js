@@ -66,24 +66,7 @@ function ProfileSidebar({ username }) {
                 </div>
             
             </div>
-            {/**<div class="hr profile" />
-            <div class="policies profile">
-                <p>Privacy</p>
-                <p class="dot">·</p>
-                <p>Terms</p>
-                <p class="dot">·</p>
-                <p>Advertising</p>
-                <p class="dot">·</p>
-                <p>Ad choices</p>
-                <i class="ads" />
-                <p class="dot">·</p>
-                <p>Cookies</p>
-                <p class="dot">·</p>
-                <p>More</p>
-                <p class="dot">·</p>
-                <p>Facebook © 2020</p>
-            </div>
-        */}
+           
              </div >
     )
 }

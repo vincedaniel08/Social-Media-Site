@@ -3,7 +3,6 @@ import "./App.css";
 import Login from "./Login";
 import Register from "./Register";
 import Sidebar from './Sidebar';
-//import Sidebar2 from './Sidebar2';
 import HomeHeader from "./HomeHeader";
 import Posts from './Posts';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -56,7 +55,7 @@ function App() {
                 <div className="app__posts">
                   <Posts user={user} />
                 </div>
-               {/*<Sidebar2 /> */} 
+              
               </div>
             </Route>
           </Switch>
