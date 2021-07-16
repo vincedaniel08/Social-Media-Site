@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import "./css/App.css";
 import Login from "./Login";
 import Register from "./Register";
 import Sidebar from './Sidebar';
 import HomeHeader from "./HomeHeader";
 import Posts from './Posts';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { auth } from "./firebase";
+import { auth } from "./utils/firebase";
 import Profile from './Profile';
 import ForgotPassword from './ForgotPassword';
 

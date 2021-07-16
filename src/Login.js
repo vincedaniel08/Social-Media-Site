@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Login.css";
-import { auth } from "./firebase";
+import "./css/Login.css";
+import { auth } from "./utils/firebase";
 import logo from "../src/images/impulse bg.gif";
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
@@ -172,12 +172,12 @@ function Login() {
   return (
     
     <div className="login" >
-        <img src={logo} alt=""  class="login__logos" />
+        <img src={logo} alt=""  className="login__logos" />
      
      
       <div className="login__container">
         
-        <h3> <img src="https://dcassetcdn.com/design_img/1991661/580863/580863_10613380_1991661_5aab9ee1_image.jpg" class="login__logo" alt="logo pic" /></h3>
+        <h3> <img src="https://dcassetcdn.com/design_img/1991661/580863/580863_10613380_1991661_5aab9ee1_image.jpg" className="login__logo" alt="logo pic" /></h3>
         
         <form autoComplete="on" onSubmit={loginn}>
           <center>
@@ -196,21 +196,21 @@ function Login() {
             />
           </center>
           <center>
-            <button type="submit" class="login__login">
+            <button type="submit" className="login__login">
               Log In
             </button>
           </center>
           
           <center>
-            <div class="sideinfo">
+            <div className="sideinfo">
            
               <Link to="/register" style={{ textDecoration: 'none' }}>
-                <h5 class="rtd">Sign up for Impulse</h5>
+                <h5 className="rtd">Sign up for Impulse</h5>
               </Link>
               <div></div>
               <Link to="/forgotpassword" style={{ textDecoration: 'none' }}>
-              <h5 class="rtd">Forgotten Password?</h5>
-              <h5 class="dot">·</h5>
+              <h5 className="rtd">Forgotten Password?</h5>
+              <h5 className="dot">·</h5>
               </Link>
             </div>
           </center>
@@ -222,7 +222,7 @@ function Login() {
       <div className="login__container">
       <Box className={classes.rootboxstore}>
                 <Box className={classes.parentbox}>
-                <Typography variant="h7" color="textPrimary" >Get the app.</Typography>
+                <Typography variant="h6" color="textPrimary" >Get the app.</Typography>
                     <Box className={classes.childboxstore}>
                         <img className={classes.store} src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt=""></img>
                         <img className={classes.store} src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt=""></img></Box>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './ImageUpload.js';
 import Dialog from '@material-ui/core/Dialog';
-import { storage, db } from './firebase';
-import firebase from "./firebase";
-import './ImageUpload.css';
+import { storage, db } from './utils/firebase';
+import firebase from "./utils/firebase";
+import './css/ImageUpload.css';
 import CloseIcon from '@material-ui/icons/Close';
 
 function ImageUpload() {

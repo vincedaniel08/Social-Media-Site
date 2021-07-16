@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import './Post.css';
+import './css/Post.css';
 import { Avatar } from '@material-ui/core';
-import {  db } from './firebase';
-import firebase from "firebase";
+import {  db } from './utils/firebase';
+import firebase from './utils/firebase';
+
 import like2 from "./images/like2.png"
 
 function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }) {
@@ -22,7 +23,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
             })
         }
 
-        console.log(postUserId)
+        
     }, [postUserId])
 
     useEffect(() => {
@@ -77,7 +78,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
             .get()
             .then(docc => {
                 const data = docc.data()
-                console.log(show)
+              
                 if (show === 'like2') {
                     db.collection("posts")
                         .doc(postId)
@@ -86,7 +87,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
                         .get()
                         .then(doc2 => {
                             if (doc2.data()) {
-                                console.log(doc2.data())
+                               
                             } else {
                                 db.collection("posts").doc(postId).collection("likes").doc(user.uid).set({
                                     likes: 1

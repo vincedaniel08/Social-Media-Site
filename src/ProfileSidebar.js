@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import './ProfileSidebar.css';
-import { db } from './firebase';
+import './css/ProfileSidebar.css';
+import { db } from './utils/firebase';
 
 function ProfileSidebar({ username }) {
     var [nposts] = useState([])
@@ -44,7 +44,7 @@ function ProfileSidebar({ username }) {
                                 <h1>{`${cuserdata?.birthday[0]} - ${cuserdata?.birthday[1]} - ${cuserdata?.birthday[2]}`}</h1>
                             </div>
                         ) : (
-                                console.log()
+                                false
                             )
 
                     }

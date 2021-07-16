@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { auth, db } from "./firebase";
-import "./Register.css";
+import { auth, db } from "./utils/firebase";
+import "./css/Register.css";
 import logo from "../src/images/impulse bg.gif";
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
@@ -187,10 +187,10 @@ function Register() {
 
     return (
         <div className="register">
-            <img src={logo} alt=""  class="register__logos" />
+            <img src={logo} alt=""  className="register__logos" />
            
             <div className="register__container">
-                <h1> <img src="https://dcassetcdn.com/design_img/1991661/580863/580863_10613380_1991661_5aab9ee1_image.jpg" class="register__logo" alt="logo pic"/></h1>
+                <h1> <img src="https://dcassetcdn.com/design_img/1991661/580863/580863_10613380_1991661_5aab9ee1_image.jpg" className="register__logo" alt="logo pic"/></h1>
                
                 
                 <form>
@@ -446,7 +446,7 @@ function Register() {
                 <div className="login__container">
       <Box className={classes.rootboxstore}>
                 <Box className={classes.parentbox}>
-                <Typography variant="h7" color="textPrimary" >Get the app.</Typography>
+                <Typography variant="h6" color="textPrimary" >Get the app.</Typography>
                     <Box className={classes.childboxstore}>
                         <img className={classes.store} src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt=""></img>
                         <img className={classes.store} src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt=""></img></Box>

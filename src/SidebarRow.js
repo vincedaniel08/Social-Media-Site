@@ -1,5 +1,5 @@
 import React from 'react'
-import './SidebarRow.css';
+import './css/SidebarRow.css';
 
 function SidebarRow({ ImageLink, title, dropdown, avatar }) {
     return (

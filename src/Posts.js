@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import ImageUpload from './ImageUpload';
 import Post from './Post';
-import './Posts.css';
-import { db } from './firebase';
+import './css/Posts.css';
+import { db } from './utils/firebase';
 import { useHistory } from 'react-router-dom';
 
 function Posts({ user }) {
@@ -24,7 +24,7 @@ function Posts({ user }) {
         })
     }, []);
 
-    console.log(posts)
+
     
     return (
         <div className="posts">

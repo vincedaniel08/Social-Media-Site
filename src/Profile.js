@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import './Profile.css';
+import './css/Profile.css';
 import { useParams } from 'react-router-dom';
 import Dialog from '@material-ui/core/Dialog';
-import { storage, db } from './firebase';
+import { storage, db } from './utils/firebase';
 import firebase from "firebase";
 import ProfileSidebar from './ProfileSidebar';
 import ImageUpload from './ImageUpload';
@@ -94,7 +94,7 @@ function Profile({ user }) {
 
             },
             (error) => {
-                console.log(error);
+         
                 alert(error.message);
             },
             () => {
@@ -183,7 +183,7 @@ function Profile({ user }) {
 
     useEffect(() => {
         if (bioPresent === false) {
-            console.log()
+           
         } else {
             $('.bio')[0].innerText = "Edit";
             $('.bioText')[0].innerText = bio;
@@ -253,13 +253,13 @@ function Profile({ user }) {
                         username === currentUser?.displayName ? (
                             <ImageUpload username={username} />
                         ) : (
-                                console.log()
+                               false
                             )
                     }
                     {
                         posts.map(({ id, post }) => (
                             post.username !== username ? (
-                                console.log()
+                                false
                             ) : (
                                 < Post key={id} postId={id} user={user} username={post.username} caption={post.caption} imageUrl={post.imageUrl} noLikes={post.noLikes} postUserId={post.uid} />
                                 )

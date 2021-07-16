@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./HomeHeader.css";
+import "./css/HomeHeader.css";
 import Avatar from "@material-ui/core/Avatar";
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
-import { auth, db } from './firebase';
+import { auth, db } from './utils/firebase';
 import { useStateValue } from './StateProvider';
 
 
