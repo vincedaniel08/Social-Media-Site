@@ -166,7 +166,6 @@
   width: 50px;
   outline: #CCD0D5;
   border-radius: 5px;
-  margin-top: 10px;
   float: center;
 }
 
@@ -186,7 +185,9 @@
   font-size: 12px;
   color: #606770;
   font-weight: 400;
+  margin-top: 10px;
   float: center;
+ 
   margin-left: 10px;
 }
 

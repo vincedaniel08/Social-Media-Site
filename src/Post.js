@@ -47,7 +47,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
             .get()
             .then(doc2 => {
                 if (doc2.data()) {
-                    if (show === 'like2') {
+                    if ( show === 'like2') {
                         setShow('like2 blue');
                         setShow2('textforlike bluetextforlike');
                  
@@ -59,7 +59,7 @@ function Post({ postId, user, username, caption, imageUrl, noLikes, postUserId }
                         
                     }
                
-                } 
+                }
             })
     },[postId, user.uid]);
 
